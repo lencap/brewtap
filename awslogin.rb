@@ -3,8 +3,8 @@ class Awslogin < Formula
   homepage "https://github.com/lencap/awslogin/"
   url "https://github.com/lencap/awslogin/releases/download/v1.5.2/awslogin"
   version "1.5.2"
-  sha256 "aff02bbead5afae0d6a4275a3dd6442823276d2e54c0085eb5910b07458dd904"
-
+  sha256 "c204b63f9545242dc15a2ce1f0bc505644ac54dd78b43b8a5d6b5cc92b512b6d"
+    
   def install
     bin.install "awslogin"
   end
