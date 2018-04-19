@@ -3,7 +3,7 @@ Homebrew Tap for lencap formulas/releases
 
 1. Ensure you have Homebrew installed -> https://brew.sh/
 2. `brew tap lencap/tools`
-3. Afterwards, you should be able to do any `brew install lencap/tools/<formula>`, e.g., `brew install lencap/tools/awslogin`
+3. Afterwards, you should be able to do any `brew install lencap/tools/<formula>`
 
 # Publish New Release
 To publish a new release of your program.
@@ -20,4 +20,4 @@ To publish a new release of your program.
 To update an existing formula, after publishing a new release:
 
 1. Generate the SHA256 checksum of the new binary: `shasum -a 256 build/macos/awsinfo`
-2. Update the new URL and SHA256 values in the respective `*.rb` file.
+2. Update the `url`, `sha256`, and `version` values in the respective `*.rb` file.
