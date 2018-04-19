@@ -20,4 +20,4 @@ To publish a new release of your program.
 To update an existing formula, after publishing a new release:
 
 1. Generate the SHA256 checksum of the new binary: `shasum -a 256 build/macos/awsinfo`
-2. Edit the respective `*.rb` file with the new a) URL, b) VERSION, and c) SHA256 value.
+2. Update the new URL and SHA256 values in the respective `*.rb` file.
