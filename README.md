@@ -11,7 +11,7 @@ To publish a new release of your program.
 1. Make sure you've compiled the new version to be released.
 2. Go to the releases section of your repo, say https://github.com/lencap/awsinfo/releases
 3. Click on `Draft a new release`
-4. Enter `Tag Version` and `Release title` (normally the same.
+4. Enter `Tag Version` and `Release title` (normally these are the same).
 5. Describe the release
 6. Attach the binary
 7. Click on `Publish Release`
