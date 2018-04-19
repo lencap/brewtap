@@ -1,9 +1,11 @@
 class Awsinfo < Formula
   desc "AWS CLI Information Utility"
   homepage "https://github.com/lencap/awsinfo/"
-  url "https://github.com/lencap/awsinfo/releases/download/v2.0.9/awsinfo-2.0.9.gz"
-  sha256 "6becd35ae9b30cc22c54165261551ca7361314b79ac6e2e5918c12fe8bd80f7f"
-    
+  url "https://github.com/lencap/awsinfo/releases/download/v2.0.9/awsinfo"
+  sha256 "cd7eb2a0d84b99d7ebabee4f91ad1d56b7609610bae7b84d1fe15690a15a5301"
+  
+  bottle :unneeded
+  
   def install
     bin.install "awsinfo"
   end
