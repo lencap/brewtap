@@ -1,5 +1,5 @@
-# homebrew-tools
-Homebrew Tap for lencap formulas/releases
+# Homebrew Tools
+Homebrew Tap for lencap programs
 
 1. Ensure you have Homebrew installed -> https://brew.sh/
 2. `brew tap lencap/tools`
