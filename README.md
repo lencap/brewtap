@@ -7,10 +7,12 @@ Homebrew Tap for lencap programs
 
 ### Publishing New Releases
 1. Compiled the new program version to be released, tar gzip it, and genereate SHA256 sum:
+
 <pre><code>
 tar czf awsinfo-2.0.11.tar.gz awsinfo
 shasum -a 256 awsinfo-2.0.11.tar.gz
-</pre></code>
+</code></pre>
+
 2. Go to releases section of program repo, say https://github.com/lencap/awsinfo/releases
 3. Click on `Draft a new release`
 4. Enter `Tag Version` and `Release title` (normally these are the same), e.g. `2.0.11`.
