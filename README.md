@@ -1,5 +1,5 @@
 ## Homebrew Tools
-My own lencap Homebrew Tap. Anyone can distribute their own `brew` formulas (program binaries). Just create your own Github repo called `homebrew-<name>` like this one, where `<name>` is whatever you want. Then populate it with these `.rb` files, representing the respective programs' Homebrew formulas.
+My own lencap Homebrew Tap. Anyone can distribute their own `brew` formulas (program binaries). Just create your own Github repo called `homebrew-<name>` like this one, where `<name>` is whatever you want. Then populate it with these `.rb` files, representing the respective programs' Homebrew formulas. For more info read [How to Create and Maintain a Tap](https://github.com/Homebrew/brew/blob/master/docs/How-to-Create-and-Maintain-a-Tap.md).
 
 ## Installing a Release
 1. First step is to obviously make sure Homebrew is installed -> https://brew.sh/
@@ -17,7 +17,7 @@ brew upgrade lencap/tools/smsclic
 brew install awsinfo
 </code></pre>
 
-Of course, you'll need to make sure your program __names__ don't collide with other major Homebrew formulas, else you will need to specifically use `lencap/tools/<formula`.
+Of course, you'll need to make sure your program __names__ don't clash with other major Homebrew formulas, else you will need to specifically use `lencap/tools/<formula`.
 
 ### Publishing New Releases
 1. Compiled the new program version to be released, tar gzip it, and generate a SHA256 sum:
@@ -26,7 +26,7 @@ Of course, you'll need to make sure your program __names__ don't collide with ot
 tar czf awsinfo-1.0.0.tar.gz smsclic
 shasum -a 256 smsclic-1.0.0.tar.gz
 </code></pre>
-NOTE: This can be a Makefile enty for your program.
+NOTE: Can be an easy Makefile option.
 
 2. Go to the __release__ section of program's Github repo, say https://github.com/lencap/smsclic/releases
 3. Click on `Draft a new release`
@@ -40,6 +40,4 @@ After publishing a new release per above:
 1. Update the `url`, `sha256`, and `version` values in the respective `*.rb` file.
 
 ## Caveats
-* Releases must be in PUBLIC Github repos in order for `brew` to access them, and install them.
-
-
+* Releases must be in PUBLIC Github repos in order for `brew` to access and install them. This may not be so obvious (lol).
