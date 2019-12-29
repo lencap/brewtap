@@ -1,3 +1,5 @@
+require_relative "./custom_download_strategy.rb"
+
 class Smscli < Formula
   desc "SMS CLI utility"
   homepage "https://github.com/lencap/smscli"
