@@ -1,25 +1,40 @@
-# Homebrew Tools
-Homebrew Tap for lencap programs
+## Homebrew Tools
+My own lencap Homebrew Tap. Anyone can distribute their own `brew` formulas (program binaries). Just create your own Github repo called `homebrew-<name>` like this one, where `<name>` is whatever you want. Then populate it with these `.rb` files, representing the respective programs' Homebrew formulas.
 
-1. Ensure you have Homebrew installed -> https://brew.sh/
-2. Do `brew untap lencap/tools && brew tap lencap/tools` to grab the latest formulas (ignore error if you've never had it installed).
-3. Afterwards, you should be able to `brew install lencap/tools/<formula>` or `brew upgrade lencap/tools/<formula>` for any formula.
-
-### Publishing New Releases
-1. Compiled the new program version to be released, tar gzip it, and genereate SHA256 sum:
+## Installing a Release
+1. First step is to obviously make sure Homebrew is installed -> https://brew.sh/
+2. Then install the specific release you want. For example:
 
 <pre><code>
-tar czf awsinfo-2.0.11.tar.gz awsinfo
-shasum -a 256 awsinfo-2.0.11.tar.gz
+brew install lencap/tools/smsclic
+or
+brew upgrade lencap/tools/smsclic
 </code></pre>
 
-2. Go to releases section of program repo, say https://github.com/lencap/awsinfo/releases
+3. Once you've installed __one__ formula from your own tap, all other formulas will also be available with the simpler:
+
+<pre><code>
+brew install awsinfo
+</code></pre>
+
+Of course, you'll need to make sure programs __names__ don't collide with other major Homebrew formulas, else you will need to specifically use `lencap/tools/<formula`.
+
+### Publishing New Releases
+1. Compiled the new program version to be released, tar gzip it, and generate a SHA256 sum:
+
+<pre><code>
+tar czf awsinfo-1.0.0.tar.gz smsclic
+shasum -a 256 smsclic-1.0.0.tar.gz
+</code></pre>
+NOTE: This can be a Makefile enty for your program.
+
+2. Go to the __release__ section of program's Github repo, say https://github.com/lencap/smsclic/releases
 3. Click on `Draft a new release`
-4. Enter `Tag Version` and `Release title` (normally these are the same), e.g. `2.0.11`.
+4. Enter `Tag Version` and `Release title`, generally the same, e.g. `v1.0.0`.
 5. Describe the release
-6. Attach the binary
+6. Attach the tar.gz binary
 7. Click on `Publish Release`
 
-### Updating Existing Formulas
-After publishing a new release
+### Updating Formulas
+After publishing a new release per above:
 1. Update the `url`, `sha256`, and `version` values in the respective `*.rb` file.
