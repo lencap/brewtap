@@ -40,4 +40,8 @@ After publishing a new release per above:
 1. Update the `url`, `sha256`, and `version` values in the respective `*.rb` file.
 
 ## Caveats
-* Releases must be in PUBLIC Github repos in order for `brew` to access and install them. This may not be so obvious (lol).
+All this works fine for releases that are in __public__ Github repos. However, for private repos you have to append the following to the `url` in the RB file:
+
+  `, :using => GitHubPrivateRepositoryReleaseDownloadStrategy`
+  
+Then you must setup a Gibhub access token, with very limited __Read/Only__ access, and securely assign it to environment variable `HOMEBREW_GITHUB_API_TOKEN`.
