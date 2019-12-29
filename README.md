@@ -11,13 +11,13 @@ or
 brew upgrade lencap/tools/smsclic
 </code></pre>
 
-3. Once you've installed __one__ formula from your own tap, all other formulas will also be available with the simpler:
+3. Once you've installed __one__ formula from your own tap, all other formulas in this tap will also be available with the simpler command:
 
 <pre><code>
 brew install awsinfo
 </code></pre>
 
-Of course, you'll need to make sure programs __names__ don't collide with other major Homebrew formulas, else you will need to specifically use `lencap/tools/<formula`.
+Of course, you'll need to make sure your program __names__ don't collide with other major Homebrew formulas, else you will need to specifically use `lencap/tools/<formula`.
 
 ### Publishing New Releases
 1. Compiled the new program version to be released, tar gzip it, and generate a SHA256 sum:
