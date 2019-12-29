@@ -38,3 +38,8 @@ NOTE: This can be a Makefile enty for your program.
 ### Updating Formulas
 After publishing a new release per above:
 1. Update the `url`, `sha256`, and `version` values in the respective `*.rb` file.
+
+## Caveats
+* Releases must be in PUBLIC Github repos in order for `brew` to access them, and install them.
+
+
