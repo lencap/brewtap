@@ -19,7 +19,7 @@ brew install awsinfo
 
 Of course, you'll need to make sure your program __names__ don't clash with other major Homebrew formulas, else you will need to specifically use `lencap/tools/<formula`.
 
-### Publishing New Releases
+## Publishing New Releases
 1. Compiled the new program version to be released, tar gzip it, and generate a SHA256 sum:
 
 <pre><code>
@@ -35,7 +35,7 @@ NOTE: Can be an easy Makefile option.
 6. Attach the tar.gz binary
 7. Click on `Publish Release`
 
-### Updating Formulas
+## Updating Formulas
 After publishing a new release per above:
 1. Update the `url`, `sha256`, and `version` values in the respective `*.rb` file.
 
