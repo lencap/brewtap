@@ -40,8 +40,5 @@ After publishing a new release per above:
 1. Update the `url`, `sha256`, and `version` values in the respective `*.rb` file.
 
 ## Caveats
-All this works fine for releases that are in __public__ Github repos. However, for __private__ repos you have to append the following to the `url` in the RB file:
-
-  `, :using => GitHubPrivateRepositoryReleaseDownloadStrategy`
-  
-Then you must set up a Github access token with __limited__ access, and securely assign it to environment variable `HOMEBREW_GITHUB_API_TOKEN`.
+* All this works fine for releases that are in __public__ Github repos.
+* For __private__ repos you have to follow [this trick](lessthanhero.io/post/homebrew-with-private-repo-releases/), which appends `, :using => GitHubPrivateRepositoryReleaseDownloadStrategy` to the `url` entry in the RB file. Then ensure you have a Github access token with __limited__ access, and securely assign it to environment variable `HOMEBREW_GITHUB_API_TOKEN`. [I have not fully tested this].
