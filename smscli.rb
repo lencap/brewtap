@@ -2,7 +2,7 @@
 
 class Smscli < Formula
   desc "SMS CLI utility"
-  homepage "https://github.com/lencap/smscli"
+  homepage "https://github.com/lencap/sms"
   version "1.1.0"
   # Commenting out:
   # url "https://github.com/lencap/sms/releases/download/v1.1.0/smscli-1.1.0.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
