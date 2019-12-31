@@ -11,7 +11,7 @@ or
 brew upgrade lencap/tools/smsclic
 </code></pre>
 
-3. Once you've installed __one__ formula from your own tap, all other formulas in this tap will also be available with the simpler command:
+3. Once you've installed __one__ formula the other formulas in this tap will also be available with the simpler command:
 
 <pre><code>
 brew install awsinfo
