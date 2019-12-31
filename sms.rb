@@ -1,9 +1,9 @@
 class Sms < Formula
   desc "SMS CLI utility"
   homepage "https://github.com/lencap/sms"
-  version "1.0.0"
-  url "https://github.com/lencap/sms/releases/download/v1.0.0/sms-1.0.0.tar.gz"
-  sha256 "2d25b572c95afbd9630069184ff6fe714cd8795fa52fcd52f30d95d4c5f4f62c"
+  version "1.1.0"
+  url "https://github.com/lencap/sms/releases/download/v1.1.0/sms-1.1.0.tar.gz"
+  sha256 "790de6878d841c627d9a8709a14b63cf188e7e60d3fc0577a24ae88cbb147d16"
 
   bottle :unneeded
     
