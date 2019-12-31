@@ -1,11 +1,14 @@
-require_relative "custom_download_strategy"
+# require_relative "custom_download_strategy"
 
 class Smscli < Formula
   desc "SMS CLI utility"
   homepage "https://github.com/lencap/smscli"
-  version "1.0.4"
-  url "https://github.com/lencap/smscli/releases/download/v1.0.4/smscli-1.0.4.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-  sha256 "0ad9b3e98a51063ea3825ecd5836fdc9b80be8ff382c1091218e24eb33b6d429"
+  version "1.1.0"
+  # Commenting out:
+  # url "https://github.com/lencap/sms/releases/download/v1.1.0/smscli-1.1.0.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+  # because it's an unsupported private repo download strategy for now.
+  url "https://github.com/lencap/sms/releases/download/v1.1.0/smscli-1.1.0.tar.gz"
+  sha256 "4f6e06676600ffbb7bdad3311e550f6fe7db8212e339eff24295853090fbef89"
 
   bottle :unneeded
     
