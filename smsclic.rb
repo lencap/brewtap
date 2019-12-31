@@ -1,9 +1,9 @@
 class Smsclic < Formula
   desc "SMS CLI utility"
-  homepage "https://github.com/lencap/smsclic"
-  version "1.0.0"
-  url "https://github.com/lencap/smsclic/releases/download/v1.0.0/smsclic-1.0.0.tar.gz"
-  sha256 "dcc22956d5e62b8079d5eb1ee6ee7e20d5f57fd9956824478df3c485301913f3"
+  homepage "https://github.com/lencap/sms"
+  version "1.1.0"
+  url "https://github.com/lencap/sms/releases/download/v1.1.0/smsclic-1.1.0.tar.gz"
+  sha256 "f84c1868980182d2d42491aaea8991591c7a716ccbb9ab07c80c750901ae37f1"
 
   bottle :unneeded
     
