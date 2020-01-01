@@ -3,7 +3,7 @@ class Vm < Formula
   homepage "https://github.com/lencap/vboxtools"
   version "2.2.6"
   url "https://github.com/lencap/vboxtools/releases/download/v2.2.6/vm-2.2.6.tar.gz"
-  sha256 "f84c1868980182d2d42491aaea8991591c7a716ccbb9ab07c80c750901ae37f1"
+  sha256 "77e29d6cd6d515ba21243602edcfdff0a9ba8269cec7d204629328d3b7031892"
 
   bottle :unneeded
     
