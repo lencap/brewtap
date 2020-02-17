@@ -1,9 +1,9 @@
 class Vm < Formula
-  desc "Simple CentOS VM Manager"
+  desc "Simple Linux VM Manager"
   homepage "https://github.com/lencap/vm"
-  version "2.5.0"
-  url "https://github.com/lencap/vm/releases/download/v2.5.0/vm-2.5.0.tar.gz"
-  sha256 "1d53bb8cbd4680bac7bf402e3d2b301ef211e5be9d836d7e398a03257ac2d4ad"
+  version "2.6.0"
+  url "https://github.com/lencap/vm/releases/download/v2.6.0/vm-2.6.0.tar.gz"
+  sha256 "e7af6ac6b449767400488ce0642211280d06c03444ad23793e049cab0a549a0b"
 
   bottle :unneeded
     
