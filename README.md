@@ -15,6 +15,7 @@ brew upgrade lencap/tools/smsclic
 
 <pre><code>
 brew install awsinfo
+brew upgrade awsinfo
 </code></pre>
 
 Of course, you'll need to make sure your program __names__ don't clash with other major Homebrew formulas, else you will need to specifically use `lencap/tools/<formula`.
