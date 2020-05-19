@@ -1,9 +1,9 @@
 class Vmc < Formula
   desc "Simple Linux VM Manager"
   homepage "https://github.com/lencap/vmc"
-  version "100"
-  url "https://github.com/lencap/vmc/releases/download/v100/vmc-100.tar.gz"
-  sha256 "2b9d581864011d1555280e11b6e673e566fda373ecd72561bb652a3f6e7b1adc"
+  version "119"
+  url "https://github.com/lencap/vmc/releases/download/v119/vmc-119.tar.gz"
+  sha256 "1a0a9fb3cb2e61abaf4eeb461192f63e2e1044e859cb6046635a45141361ce9d"
 
   bottle :unneeded
     
