@@ -1,9 +1,9 @@
 class Vm < Formula
   desc "Simple Linux VM Manager"
   homepage "https://github.com/lencap/vm"
-  version "263"
-  url "https://github.com/lencap/vm/releases/download/v263/vm-263.tar.gz"
-  sha256 "2b9d581864011d1555280e11b6e673e566fda373ecd72561bb652a3f6e7b1adc"
+  version "266"
+  url "https://github.com/lencap/vm/releases/download/v266/vm-266.tar.gz"
+  sha256 "a79bcc8766f59b1e94ee2a74997a45ed6d5d3cc94c7c9d60e8579af6a0e7e085"
 
   bottle :unneeded
     
